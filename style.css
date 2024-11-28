@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.sidebar {
+    width: 250px;
+    background-color: #454444;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: darkorange;
+}
+
+.divider {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 10px 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 40%;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-item:hover {
+    opacity: 60%;
+}
+
+.menu-item .menu-placeholder {
+    width: 24px; /* Espacio reservado del mismo tamaño que el ícono */
+    height: 24px;
+    display: inline-block;
+}
+
+.menu-item-today {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 40%;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-item-today:hover {
+    opacity: 60%;
+}
+
+.menu-icon {
+    flex-shrink: 0;
+}
+
+.menu-text {
+    font-size: 15px;
+    color: white;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #201F1F;
+    border-left: 1px solid #201F1F;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.task {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.task-title {
+    margin-bottom: 0.2rem;
+    font-size: 0.9rem;
+    color: rgba(169, 169, 169, 0.692);
+}
+
+.task-date {
+    font-size: 0.7rem;
+    color: #888;
+}
+
+.main-content-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
+}
